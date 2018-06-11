@@ -271,18 +271,7 @@
                   "description": "authors of the item",
                   "default": [],
                   "items": {
-                    "type": "object",
-                    "properties": {
-                      "given": {
-                        "type": "string"
-                      },
-                      "family": {
-                        "type": "string"
-                      },
-                      "email": {
-                        "type": "string"
-                      }
-                    }
+                    "type": "string"
                   }
                 },
                 "type": {
