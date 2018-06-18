@@ -114,7 +114,8 @@
                         "base64": {
                             "type": "string"
                         }
-                    }
+                    },
+                    "requiredProperties": ["base64"]
                 },
                 {
                     "type": "object",
@@ -122,9 +123,11 @@
                         "url": {
                             "type": "string"
                         }
-                    }
+                    },
+                    "requiredProperties": ["url"]
                 }
-            ]
+            ],
+            "showMetadata": true
         },
         "table":
         {
@@ -139,7 +142,8 @@
                                 "type": "object"
                             }
                         }
-                    }
+                    },
+                    "requiredProperties": ["json"]
                 },
                 {
                     "type": "object",
@@ -147,24 +151,42 @@
                         "url": {
                             "type": "string"
                         }
-                    }
+                    },
+                    "requiredProperties": ["url"]
                 }
-            ]
+            ],
+            "showMetadata": true
         },
         "video":
         {
           "type": "object",
           "properties": {
-            "media_url": {
+            "url": {
               "type": "string",
               "description": "vimeo or youtube url of the video"
             }
           },
-          "additionalProperties": false
+          "additionalProperties": false,
+          "showMetadata": true,
+          "requiredProperties": ["url"]
+        },
+        "embed":
+        {
+          "type": "object",
+          "properties": {
+            "html": {
+              "type": "string",
+              "description": "html code of the resource"
+            }
+          },
+          "additionalProperties": false,
+          "showMetadata": true,
+          "requiredProperties": ["html"]
         },
         "bib":
         {
-          "type": "object"
+          "type": "object",
+          "showMetadata": false
         },
         "webpage":
         {
@@ -174,9 +196,35 @@
             {
               "type": "string",
               "description": "url of the webpage view"
+            },
+            "name":
+            {
+                "type": "string",
+                "description": "name of the webpage view"
             }
           },
-          "additionalProperties": false
+          "additionalProperties": false,
+          "showMetadata": false,
+          "requiredProperties": ["url"]
+        },
+        "glossary":
+        {
+          "type": "object",
+          "properties": {
+            "name":
+            {
+              "type": "string",
+              "description": "name of the glossary entry"
+            },
+            "description":
+            {
+                "type": "string",
+                "description": "description of the glossary entry"
+            }
+          },
+          "additionalProperties": false,
+          "showMetadata": false,
+          "requiredProperties": ["name"]
         }
     }
 }
