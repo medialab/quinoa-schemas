@@ -184,7 +184,7 @@
         {
           "type": "array",
           "showMetadata": false,
-          "title_path": ["data", 0, "title"],
+          "title_path": ["data", 0, "title"]
         },
         "webpage":
         {
