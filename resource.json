@@ -183,7 +183,8 @@
         "bib":
         {
           "type": "array",
-          "showMetadata": false
+          "showMetadata": false,
+          "title_path": ["data", 0, "title"],
         },
         "webpage":
         {
@@ -201,6 +202,7 @@
             }
           },
           "additionalProperties": false,
+          "title_path": ["data", "name"],
           "showMetadata": false,
           "requiredProperties": ["url"]
         },
@@ -219,6 +221,7 @@
                 "description": "description of the glossary entry"
             }
           },
+          "title_path": ["data", "name"],
           "additionalProperties": false,
           "showMetadata": false,
           "requiredProperties": ["name"]
