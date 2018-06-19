@@ -182,7 +182,7 @@
         },
         "bib":
         {
-          "type": "object",
+          "type": "array",
           "showMetadata": false
         },
         "webpage":
