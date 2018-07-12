@@ -124,10 +124,10 @@
                     "type": "object",
                     "properties": {
                         "url": {
-                            "type": "string"
+                            "filePath": "string"
                         }
                     },
-                    "requiredProperties": ["url"]
+                    "requiredProperties": ["filePath"]
                 }
             ],
             "showMetadata": true
@@ -151,11 +151,11 @@
                 {
                     "type": "object",
                     "properties": {
-                        "url": {
+                        "filePath": {
                             "type": "string"
                         }
                     },
-                    "requiredProperties": ["url"]
+                    "requiredProperties": ["filePath"]
                 }
             ],
             "showMetadata": true
