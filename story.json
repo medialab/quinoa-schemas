@@ -151,7 +151,9 @@
             "default": {
                 "template": "garlic",
                 "options": {
-                    "notesPosition": "aside"
+                    "notesPosition": "aside",
+                    "referenceStatus": "cited",
+                    "referenceTypes": ["bib"]
                 },
                 "citationStyle": {
 
