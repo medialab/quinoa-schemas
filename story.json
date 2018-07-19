@@ -18,6 +18,18 @@
             "pattern": "[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}"
         },
 
+        "lastUpdateAt":
+        {
+            "type": "number",
+            "editable": false
+        },
+        
+        "createdAt":
+        {
+            "type": "number",
+            "editable": false
+        },
+
         "metadata": {
             "$ref": "#/definitions/metadata",
             "description": "metadata describing the story"
@@ -139,8 +151,7 @@
             "default": {
                 "template": "garlic",
                 "options": {
-                    "notesPosition": "aside",
-                    "allowDisqusComments": "no"
+                    "notesPosition": "aside"
                 },
                 "citationStyle": {
 

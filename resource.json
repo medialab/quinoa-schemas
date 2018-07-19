@@ -19,6 +19,16 @@
             "default": "resource",
             "editable": false
         },
+        "lastUpdateAt":
+        {
+            "type": "number",
+            "editable": false
+        },
+        "createdAt":
+        {
+            "type": "number",
+            "editable": false
+        },
         "metadata":
         {
             "description": "metadata of the resource",
