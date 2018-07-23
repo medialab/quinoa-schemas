@@ -46,32 +46,20 @@
                     "description": "Name of the resource",
                     "default": ""
                 },
-                "creators":
+                "date":
+                {
+                    "type": "string",
+                    "description": "Date of creation attributed to the resource",
+                    "default": ""
+                },
+                "authors":
                 {
                     "type": "array",
                     "description": "creators of the resource",
                     "default": [],
                     "items":
                     {
-                        "type": "object",
-                        "properties":
-                        {
-                            "given":
-                            {
-                                "type": "string",
-                                "default": ""
-                            },
-                            "family":
-                            {
-                                "type": "string",
-                                "default": ""
-                            },
-                            "role":
-                            {
-                                "type": "string",
-                                "default": ""
-                            }
-                        },
+                        "type": "string",
                         "required": ["given", "family"]
                     }
                 },
