@@ -207,7 +207,7 @@
           },
           "additionalProperties": false,
           "title_path": ["data", "name"],
-          "showMetadata": false,
+          "showMetadata": true,
           "requiredProperties": ["url"]
         },
         "glossary":
