@@ -208,7 +208,7 @@
             }
           },
           "additionalProperties": false,
-          "title_path": ["data", "name"],
+          "title_path": ["metadata", "title"],
           "showMetadata": true,
           "requiredProperties": ["url"]
         },
