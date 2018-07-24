@@ -98,7 +98,14 @@
             },
             {
                 "$ref": "#/definitions/webpage"
-            }]
+            },
+            {
+                "$ref": "#/definitions/glossary"
+            },
+            {
+                "$ref": "#/definitions/embed"
+            }
+            ]
         }
     },
     "required": ["type", "metadata", "data"],
@@ -198,11 +205,6 @@
             {
               "type": "string",
               "description": "url of the webpage view"
-            },
-            "name":
-            {
-                "type": "string",
-                "description": "name of the webpage view"
             }
           },
           "additionalProperties": false,
