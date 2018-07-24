@@ -1,0 +1,220 @@
+{
+    "id": "contextualizer",
+    "title": "contextualizer",
+    "description": "Contextualizers used in quinoa",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "type": "object",
+    "properties":
+    {
+        "anyOf": [
+        {
+            "$ref": "#/definitions/image"
+        },
+        {
+            "$ref": "#/definitions/table"
+        },
+        {
+            "$ref": "#/definitions/bib"
+        },
+        {
+            "$ref": "#/definitions/video"
+        },
+        {
+            "$ref": "#/definitions/webpage"
+        },
+        {
+            "$ref": "#/definitions/glossary"
+        },
+        {
+            "$ref": "#/definitions/embed"
+        }]
+    },
+
+    "definitions":
+    {
+        "image":
+        {
+            "supports_insertion_types": ["BLOCK"],
+            "properties":
+            {
+                "id":
+                {
+                    "type": "string",
+                    "description": "id of the contextualizer(uuid v4)",
+                    "pattern": "[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}"
+                },
+                "type":
+                {
+                    "type": "string",
+                    "enum": ["image"]
+                },
+                "lastUpdateAt":
+                {
+                    "type": "number",
+                    "editable": false
+                }
+            }
+        },
+        "table":
+        {
+            "supports_insertion_types": ["BLOCK"],
+            "properties":
+            {
+                "id":
+                {
+                    "type": "string",
+                    "description": "id of the contextualizer(uuid v4)",
+                    "pattern": "[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}"
+                },
+                "type":
+                {
+                    "type": "string",
+                    "enum": ["table"]
+                },
+                "lastUpdateAt":
+                {
+                    "type": "number",
+                    "editable": false
+                },
+                "options":
+                {
+
+                }
+            }
+        },
+        "video":
+        {
+            "supports_insertion_types": ["BLOCK"],
+            "properties":
+            {
+                "id":
+                {
+                    "type": "string",
+                    "description": "id of the contextualizer(uuid v4)",
+                    "pattern": "[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}"
+                },
+                "type":
+                {
+                    "type": "string",
+                    "enum": ["video"]
+                },
+                "lastUpdateAt":
+                {
+                    "type": "number",
+                    "editable": false
+                },
+                "options":
+                {
+
+                }
+            }
+        },
+        "embed":
+        {
+            "supports_insertion_types": ["BLOCK"],
+            "properties":
+            {
+                "id":
+                {
+                    "type": "string",
+                    "description": "id of the contextualizer(uuid v4)",
+                    "pattern": "[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}"
+                },
+                "type":
+                {
+                    "type": "string",
+                    "enum": ["embed"]
+                },
+                "lastUpdateAt":
+                {
+                    "type": "number",
+                    "editable": false
+                }
+            }
+        },
+        "bib":
+        {
+            "supports_insertion_types": ["INLINE"],
+            "draft_entity_mutability": "IMMUTABLE",
+            "properties":
+            {
+                "id":
+                {
+                    "type": "string",
+                    "description": "id of the contextualizer(uuid v4)",
+                    "pattern": "[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}"
+                },
+                "type":
+                {
+                    "type": "string",
+                    "enum": ["glossary"]
+                },
+                "lastUpdateAt":
+                {
+                    "type": "number",
+                    "editable": false
+                },
+                "locator":
+                {
+                    "type": "string"
+                },
+                "prefix":
+                {
+                    "type": "string"
+                },
+                "suffix":
+                {
+                    "type": "string"
+                }
+            }
+        },
+        "webpage":
+        {
+            "supports_insertion_types": ["INLINE"],
+            "draft_entity_mutability": "MUTABLE",
+            "properties":
+            {
+                "id":
+                {
+                    "type": "string",
+                    "description": "id of the contextualizer(uuid v4)",
+                    "pattern": "[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}"
+                },
+                "type":
+                {
+                    "type": "string",
+                    "enum": ["webpage"]
+                },
+                "lastUpdateAt":
+                {
+                    "type": "number",
+                    "editable": false
+                }
+            }
+        },
+        "glossary":
+        {
+            "supports_insertion_types": ["INLINE"],
+            "draft_entity_mutability": "MUTABLE",
+            "properties":
+            {
+                "id":
+                {
+                    "type": "string",
+                    "description": "id of the contextualizer(uuid v4)",
+                    "pattern": "[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}"
+                },
+                "type":
+                {
+                    "type": "string",
+                    "enum": ["glossary"]
+                },
+                "lastUpdateAt":
+                {
+                    "type": "number",
+                    "editable": false
+                }
+            }
+        }
+    }
+}
