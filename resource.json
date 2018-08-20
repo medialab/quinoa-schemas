@@ -171,7 +171,8 @@
           "properties": {
             "url": {
               "type": "string",
-              "description": "vimeo or youtube url of the video"
+              "description": "vimeo or youtube url of the video",
+              "minLength": 1
             }
           },
           "additionalProperties": false,
@@ -184,7 +185,8 @@
           "properties": {
             "html": {
               "type": "string",
-              "description": "html code of the resource"
+              "description": "html code of the resource",
+              "minLength": 1
             }
           },
           "additionalProperties": false,
@@ -204,7 +206,8 @@
             "url":
             {
               "type": "string",
-              "description": "url of the webpage view"
+              "description": "url of the webpage view",
+              "minLength": 1
             }
           },
           "additionalProperties": false,
@@ -219,7 +222,8 @@
             "name":
             {
               "type": "string",
-              "description": "name of the glossary entry"
+              "description": "name of the glossary entry",
+              "minLength": 1
             },
             "description":
             {
