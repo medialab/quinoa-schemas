@@ -59,8 +59,7 @@
                     "default": [],
                     "items":
                     {
-                        "type": "string",
-                        "required": ["given", "family"]
+                        "type": "string"
                     }
                 },
                 "description":
