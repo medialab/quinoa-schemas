@@ -206,7 +206,7 @@
             "description": "settings of the story",
             "default": {
                 "templateId": "garlic",
-                "style": {
+                "styles": {
                     "garlic": {
                         "options": {
                             "notesPosition": "aside",
@@ -237,7 +237,7 @@
                     "description": "used template id",
                     "default": "garlic"
                 },
-                "styles": {
+                "templatesSettings": {
                     "type": "object",
                     "description": "series of template-dependent rendering options",
                     "default": {},
@@ -366,9 +366,9 @@
                             "type": "string",
                             "description": "type of the resource",
                             "enum": ["image", "data-presentation", "table", "video", "embed", "glossary", "bib", "webpage"]
-                        },
-                        "required": ["type"]
-                    }
+                        }
+                    },
+                    "required": ["type"]
                 },
                 "data": {
                     "type": ["object", "string", "array"]

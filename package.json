@@ -1,6 +1,6 @@
 {
   "name": "quinoa-schemas",
-  "version": "0.0.20",
+  "version": "0.0.21",
   "description": "json-schemas for quinoa apps",
   "main": "index.js",
   "scripts": {},
