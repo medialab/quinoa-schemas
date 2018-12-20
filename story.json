@@ -57,8 +57,7 @@
                 },
                 "publicationConsent": {
                     "type": "boolean",
-                    "description": "whether authors of the story authorize its publication",
-                    "default": false
+                    "description": "whether authors of the story authorize its publication"
                 },
                 "version": {
                     "type": "string",
