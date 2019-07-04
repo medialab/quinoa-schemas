@@ -51,6 +51,11 @@
                     "type": "string"
                   }
                 },
+                "edition": {
+                  "type": "string",
+                  "description": "free comment about the story edition that should be displayed on story cover (date, version, ...)",
+                  "default": ""
+                },
                 "abstract": {
                   "type": "string",
                   "default": ""
